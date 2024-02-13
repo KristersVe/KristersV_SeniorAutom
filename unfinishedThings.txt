@@ -1,0 +1,9 @@
+Due to my poor time management I did not manage to complete quite a lot of things and
+I will list them here so you don't have to look for something that is not implemented
+
+Poor credential management, should have used ENV variables for example
+Screenshot/video capture on test failure is not functional
+Not every Pylint warning is fixed
+On Jitsi meet test I tried using OBS Virtual camera for custom video feed, but for some reason
+could not select the OBS Virtual camera option in Jitsi meet app
+Docstrings are missing for methods

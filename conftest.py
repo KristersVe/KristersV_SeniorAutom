@@ -60,3 +60,21 @@ def appium_driver_jitsi():
 
     driver.quit()
     appium_service.stop()
+
+
+# This hook could have been used for screenshot captures
+# @pytest.hookimpl(tryfirst=True, hookwrapper=True)
+# def pytest_runtest_makereport(item, call):
+#     outcome = yield
+#     rep = outcome.get_result()
+#     if rep.when == "call" and rep.failed:
+#         try:
+#             driver = item._request.getfixturevalue('driver')
+#             driver.save_screenshot("failure_screenshot.png")
+#         except Exception as e:
+#             print("Failed to capture screenshot:", e)
+#
+# def pytest_html_results_table_row(report, cells):
+#     if report.failed:
+#         screenshot_path = report.extra['screenshot_path']
+#         cells.append(pytest_html.extras.url(screenshot_path, "Screenshot"))

@@ -1,0 +1,5 @@
+*.png
+*.html
+.pytest_cache/
+assets/
+venv/

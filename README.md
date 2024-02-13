@@ -13,8 +13,8 @@ you can optionally use ``-k`` flag to run specific feature file, for which there
 
 Intended to run on currently latest Firefox and Chrome versions and Android version 14  
   
-IMPORTANT: For the Jitsi meet test you have to log in with a gmail account from you Android phone with credentials ``doej54190@gmail.com
-and doejohn222@`` so that i does not ask for you to log in all the time.  
+IMPORTANT: For the Jitsi meet test you have to log in with a gmail account from you Android phone with credentials``
+doersjohn9@gmail.com and doersjohn123@``so that it does not ask for you to log in all the time.  
     
 Tests are structured with human readable feature files and test steps that are located under tests folder  
 For better readibility pages files are used to store locators; contest.py and appium_setup is being used for setup/teardown

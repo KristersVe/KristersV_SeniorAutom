@@ -41,7 +41,7 @@ class GitHubPage:
 
     def create_repository(self):
         username = "doej5"
-        token = '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'
+        token = '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'
 
         repository_name = 'test_repo'
         url = f'https://api.github.com/repos/{username}/{repository_name}'

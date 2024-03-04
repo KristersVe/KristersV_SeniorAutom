@@ -45,7 +45,8 @@ class ConferencePage:
 
     def select_location(self):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, f"alert-input-1-{random.randint(1, 3)}")))
+            random_location = random.choice(ConferenceLocators.LOCATIONS)
+            element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, f"//android.widget.RadioButton[@text='{random_location}']")))
             element_text = element.text
             element.click()
             self.driver.find_element(*ConferenceLocators.SELECT_LOCATION_OK_BUTTON).click()
@@ -84,7 +85,8 @@ class ConferencePage:
 
     def switch_to_other_tab(self):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, random.choice(ConferenceLocators.TABS))))
+            random_tab = random.choice(ConferenceLocators.TABS)
+            element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, f"//android.widget.TextView[@text='{random_tab}']")))
             element.click()
         except TimeoutException:
             raise AssertionError(f"Tab is not found or not clickable")

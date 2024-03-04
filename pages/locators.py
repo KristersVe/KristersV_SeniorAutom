@@ -1,12 +1,14 @@
+
 from selenium.webdriver.common.by import By
 
 
 class ConferenceLocators:
-    SKIP_TUTORIAL_BTN = (By.ID, "skip_tutorial_btn")
-    ABOUT_TAB_BUTTON = (By.ID, "tab-button-about")
+    SKIP_TUTORIAL_BTN = (By.XPATH, "//android.widget.Button[@text='SKIP']")
+    ABOUT_TAB_BUTTON = (By.XPATH, "//android.view.View[@text='information circle About']")
     LOCATION_OPTION = (By.XPATH, "//android.widget.TextView[@text='Location']")
     SELECT_LOCATION_OK_BUTTON = (By.XPATH, "//android.widget.Button[@text='OK']")
-    TABS = ["tab-button-speakers", "tab-button-map", "tab-button-schedule"]
+    LOCATIONS = ["Austin, TX", "Chicago, IL", "Seattle, WA"]
+    TABS = ["Schedule", "Speakers", "Map"]
 
 
 class GitHubLocators:
